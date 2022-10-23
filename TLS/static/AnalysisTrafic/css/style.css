@@ -3,6 +3,9 @@
 	border: none;
 	margin-bottom: 20px;
 }
+
+,table .tbody{height: 100px;}
+
 .table thead th {
 	font-weight: bold;
 	text-align: left;
@@ -32,4 +35,20 @@
 }
 .table tbody tr td:last-child {
 	border-radius: 0 8px 8px 0;
+}
+
+img{
+border-style: none;
+position: absolute;
+top: 1px;
+width: 600px;
+height: 600px;
+right: 25px;}
+.circle {top: 600px;
+width: 600px;
+height: 600px;}
+
+.form_download{position:absolute;
+  top: 270px;
+  left: 723px;
 }

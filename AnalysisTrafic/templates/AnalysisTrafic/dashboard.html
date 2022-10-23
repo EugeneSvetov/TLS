@@ -5028,21 +5028,25 @@
     <div data-style="9805ad58-9141-432b-899b-bfaa278872f7" class="parent-container " style="overflow: hidden;">
 <table class="table">
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Протокол</th>
+    <th>Данные клиента</th>
+    <th>Данные сервера</th>
+    <th>Payload</th>
+    <th>TCP</th>
   </tr>
+    {% for i in list_data %}
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>{{ i.0 }}</td>
+    <td>{{ i.1 }}</td>
+    <td>{{ i.2 }}</td>
+    <td>{{ i.3 }}</td>
+    <td>{{ i.4 }}</td>
+
   </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
+{% endfor %}
 </table>
+                    <img class="circle" src="{% static 'AnalysisTrafic/images/circle.png' %}">
+                    <img src="{% static 'AnalysisTrafic/images/column.png' %}">
 
                     <img srcset="https://media.discordapp.net/attachments/881639001096880131/1033421297012711595/1625863566_6-kartinkin-com-p-kiberbezopasnost-oboi-krasivie-7.jpg?width=1214&height=683"
                          src="https://media.discordapp.net/attachments/881639001096880131/1033421297012711595/1625863566_6-kartinkin-com-p-kiberbezopasnost-oboi-krasivie-7.jpg?width=1214&height=683"

@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="https://cdn2.craftum.com/css/bootstrap.min.css?hash=9646b1be39c98793a2678fe54709099b"/>
     <link rel="stylesheet"
           href="https://cdn2.craftum.com/css/bootstrap-vue.min.css?hash=9646b1be39c98793a2678fe54709099b"/>
+    <link rel="stylesheet" href="{% static 'AnalysisTrafic/css/style.css' %}"/>
     <link rel="stylesheet" href="{% static 'AnalysisTrafic/css/cli-core.css' %}"/>
     <link rel="stylesheet" href="{% static 'AnalysisTrafic/css/cli-theme-th1.css' %}"/>
     <link rel="stylesheet" href="{% static 'AnalysisTrafic/css/cli-theme-th2.css' %}"/>
@@ -5031,28 +5032,20 @@
                  class="cli-block__inner cli-block__inner--converted cli-cover full stop"
                  style="position: relative; padding: 0px;"><!----><!----><!----><h2
                     data-element="853b48de-a6e7-4cbb-bd03-411a8aaadeef/4be09baa-9186-40c4-8147-8a8b163838e9"
-                    class="cli-subtitle cli-regular" block-element="[object Object]" data-step-animation="" style="">
+                    class="cli-subtitle cli-regular" block-element="[object Object]" data-step-animation="" style="width:600px;margin-left:60px;">
                 <span style="color: rgba(255, 255, 255, 1)" class="white">Попробуйте наш сервис прямо сейчас:</span>
-            </h2><a class="cli-btn fixed primary big" href="page3/index.html" target="_self"
-                    data-element="afa4f54b-779b-4f99-b84d-c97c29edd81b/5d198f2a-dd14-4d22-9adc-76bdfad609ef"
-                    breakpoint="@media screen and (min-width: 1200px)" block-element="[object Object]"
-                    data-step-animation="{&quot;eventType&quot;:&quot;click&quot;,&quot;loop&quot;:&quot;none&quot;,&quot;startTrigger&quot;:&quot;bottom&quot;,&quot;steps&quot;:[{&quot;delay&quot;:0,&quot;distance&quot;:300,&quot;duration&quot;:300,&quot;easing&quot;:&quot;linear&quot;,&quot;fix&quot;:false,&quot;opacity&quot;:1,&quot;rotate&quot;:0,&quot;scale&quot;:1,&quot;translateX&quot;:0,&quot;translateY&quot;:0}],&quot;triggerOffset&quot;:0}"
-                    style="padding: 0px;"><!----><span class="cli-btn-text">Оставить заявку</span></a><a
-                    class="cli-btn fixed primary big"
-                    data-element="c5bfee9e-d9e2-40e7-bbb8-50f4596c9f58/aa92d2bd-1e94-4f24-adff-009f9a54bcde"
-                    breakpoint="@media screen and (min-width: 1200px)" block-element="[object Object]"
-                    data-step-animation="" style="display: none; padding: 0px;"><!----><span class="cli-btn-text"><!----></span></a>
+            </h2>
                 <div data-element="f6c374ec-eb14-4456-91ba-be16886fad3d/377a9288-e432-4e9f-9f33-0f37011c8894"
                      class="cli-display" block-element="[object Object]" data-step-animation="" style="">Безопасность
                     трафика - наше всё
                 </div>
 
-                <form method="post" enctype="multipart/form-data">
+                <form class="form_download" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
-                  <!-- myfile1 - переменная передающееся в Django -->
-                  <input type="file" name="myfile1" style="color:transparent;">
-                  <button type="submit">Загрузка</button>
+                  <input type="file" name="myfile1" style="color:transparent;width: 85px;">
+                  <button type="submit" href="dashboard/" class="cli-btn fixed primary big" style="margin-right: -145px;">Загрузка</button>
                 </form>
+                <button class="cli-btn fixed primary big" style="margin-top:350px;margin-left:570px;"><a href="/dashboard" style="color:white;">Далее</a></button>
             </div>
             <div class="full">
                 <div class="cli-bg" style="background: rgb(21, 21, 21);">

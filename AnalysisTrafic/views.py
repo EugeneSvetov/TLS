@@ -2,6 +2,12 @@ from django.shortcuts import render, redirect
 from django.core.files.storage import FileSystemStorage
 import os
 
+# from TLS.AnalysisTrafic.ML_model import get_data
+
+
+from .ML_model import get_data
+
+
 def home(request):
     return render(request, 'AnalysisTrafic/index.html')
 
@@ -17,7 +23,8 @@ def download_file(request):
 
 
 def dashboard(request):
-    name_file = os.listdir("media")[0]
-
-
-    return render(request, 'AnalysisTrafic/dashboard.html')
+    list_data = get_data()
+    print(list_data)
+    return render(request, 'AnalysisTrafic/dashboard.html', context={
+        'list_data': list_data
+    })
